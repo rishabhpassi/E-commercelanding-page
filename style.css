@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid .01px rgb(205, 222, 228);
+    width: 85%;
+    margin: auto;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+
+}
+
+.main-header img.logo {
+    height: fit-content;
+    margin-left: 2rem;
+}
+
+.menu-items ul {
+    display: flex;
+    gap: 1rem;
+    margin-right: 25rem;
+
+
+}
+
+.menu-items ul li {
+    list-style: none;
+    font-size: medium;
+    color: rgb(116, 142, 151);
+    cursor: pointer;
+    position: relative;
+
+}
+
+.menu-items ul li:hover {
+    color: hsl(220, 13%, 13%);
+}
+
+img.cart {
+    cursor: pointer;
+}
+
+img.avatar {
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid hsl(26, 100%, 55%);
+    font-size: 3rem;
+
+}
+
+img.avatar:hover {
+    border: 3px solid hsl(26, 100%, 55%);
+
+}
+
+.right-items {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: hsl(26, 100%, 55%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-bottom: -3rem;
+
+}
+
+li:hover:after {
+    width: 100%;
+    left: 0;
+    margin-bottom: -3rem;
+    padding: 1px;
+}
+
+.cart-menu {
+    position: relative;
+    display: inline-block;
+
+
+}
+.badge {
+    display: none;
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    width: 7px;
+    height: 7px;
+    font-size: xx-small;
+    padding: 5px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
+.cart-menu-show {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 0rem;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    background-color: hsl(0, 0%, 100%);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 5%;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.cart-detail {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(116, 142, 151);
+
+}
+
+img.cart-item {
+    height: 3rem;
+    border-radius: 10%;
+}
+
+img.cart-icon {
+    height: max-content;
+}
+
+.cart-total {
+    font-weight: bold;
+    color: black;
+    margin-left: .5rem;
+}
+
+.cart-totals {
+    font-weight: bold;
+    color: black;
+
+}
+
+p.cart {
+    border-bottom: solid .01px rgb(205, 222, 228);
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+img.delete-icon {
+    cursor: pointer;
+}
+
+.checkout-button {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    border: 0ch;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.image {
+    max-height: 31rem;
+    max-width: 31rem;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    text-align: center;
+
+}
+
+img.image-1 {
+    max-height: 25rem;
+    max-width: 25rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.bottom-slider img {
+    height: 5rem;
+    margin: .5rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#controls {
+    display: flex;
+    width: 4rem;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    align-items: center;
+    margin-right: 2rem;
+
+
+
+
+}
+
+#controls button {
+    border: none;
+    background-color: none;
+    background: none;
+    color: hsl(26, 100%, 55%);
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+#controls button span {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+
+}
+
+.shopping-cart {
+    background-color: aliceblue;
+    max-width: 10rem;
+    border-radius: 10px;
+
+}
+
+#badge {
+    font-weight: bold !important;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.add-to-cart {
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 9rem;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 15rem;
+    justify-content: center;
+
+
+}
+
+.comapny-name {
+    color: hsl(26, 100%, 55%);
+    font-size: x-large;
+}
+
+.b {
+    display: flex;
+    align-items: center;
+
+}
+
+.car {
+    height: 1rem;
+    fill: white;
+
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.product-description1 {
+    color: rgb(116, 142, 151);
+    font-size: 16px;
+}
+
+.product-name {
+    font-size: xxx-large;
+}
+
+.price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.price h5 {
+    background-color: hsl(25, 100%, 94%);
+    width: fit-content;
+    color: hsl(26, 100%, 55%);
+    padding: .5rem;
+    font-size: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgb(186, 198, 202);
+    margin-top: 0;
+}
+
+.product-description {
+    width: 32rem;
+}
+
+.gallery {
+    display: flex;
+}
+
+.lightbox {
+    display: block;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    visibility: hidden;
+}
+
+.lightbox-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 25rem;
+   
+}
+
+.lightbox-buttons {X
+   
+
+}
+.lightbox-buttons button{
+    background: azure;
+    border-radius: 100%;
+    color: white;
+    border: none;
+    font-size: 31px;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 2px 4px darkslategrey;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+
+.lightbox-prev,
+.lightbox-next,
+.lightbox-close {
+    font-size: 36px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+   
+    
+}
+.fle{
+    display: flex;
+    align-items: center;
+    position: relative;   
+    top: 20rem;
+    justify-content: space-around;
+    
+}
+.fle .lightbox-buttons img{
+    height: 5rem;
+    margin: .5rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+div.imgaes{
+    gap: 1rem;
+    display: flex;
+    bottom: 3rem;
+    position: absolute;
+    width: 100%;
+    border-radius: 5%;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+div.imgaes a img{
+    height: 5rem;
+    margin: .5rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+div.imgaes a img:hover{
+    opacity: 50%;
+    content: "";
+    background-color: antiquewhite;
+    
+}
+img.cart::after{
+    content: "rr";
+
+}
+
+
+.lightbox-prev {
+    margin-right: 20px;
+}
+
+.lightbox-next {
+    margin-left: 20px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 48px;
+}

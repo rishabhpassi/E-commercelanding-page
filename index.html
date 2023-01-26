@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <div class="menu-items">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="right-items">
+      <div class="cart-menu">
+        <img src="./images/icon-cart.svg" alt="cart" class="cart">
+        <span class="badge">3</span>
+        <div class="cart-menu-show">
+
+          <p class="cart">Cart</p>
+          <div class="cart-detail">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="cart-item" class="cart-item">
+            <div class="cart-des">
+              <p class="cart-item-name">Fall Limited Edition Sneakers</p>
+              <p>
+                $125.00 x
+                <span class="cart-total-items">0</span>
+                <span class="cart-total">$</span><span class="cart-totals">0</span>
+
+              </p>
+            </div>
+            <img src="./images/icon-delete.svg" alt="delete" class="delete-icon">
+          </div>
+          <button class="checkout-button">Checkout</button>
+        </div>
+      </div>
+      <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+    </div>
+    </div>
+  </header>
+  <div class="main">
+    <div class="image">
+      <div class="big-image">
+        <a href="./images/image-product-1.jpg" class="lightbox" data-index="1">
+          <img src="./images/image-product-1.jpg" alt="image-1" class="image-1">
+        </a>
+      </div>
+      <div class="bottom-slider">
+        <div class="gallery">
+          <a href="./images/image-product-1.jpg" class="lightbox" data-index="1">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Image 1" class="thumb-1">
+          </a>
+          <a href="./images/image-product-2.jpg" class="lightbox" data-index="2">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="Image 2" class="thumb-2">
+          </a>
+          <a href="./images/image-product-3.jpg" class="lightbox" data-index="3">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="Image 3" class="thumb-3">
+          </a>
+          <a href="./images/image-product-4.jpg" class="lightbox" data-index="4">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="Image 3" class="thumb-4">
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="lightbox-overlay">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-buttons">
+          <div class="fle">
+            <button class="lightbox-prev"><img src="./images/icon-previous.svg" alt="prev-icon"></button>
+            <button class="lightbox-next"><img src="./images/icon-next.svg" alt="next-icon"></button>
+          </div>
+          <button class="lightbox-close"><img src="./images/icon-close.svg" alt="close-icon"></button>
+        </div>
+        <div class="imgaes">
+          <a href="./images/image-product-1.jpg" class="lightbox" data-index="1">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="Image 1" class="thumb-1">
+          </a>
+          <a href="./images/image-product-2.jpg" class="lightbox" data-index="2">
+            <img src="./images/image-product-2-thumbnail.jpg" alt="Image 2" class="thumb-2">
+          </a>
+          <a href="./images/image-product-3.jpg" class="lightbox" data-index="3">
+            <img src="./images/image-product-3-thumbnail.jpg" alt="Image 3" class="thumb-3">
+          </a>
+          <a href="./images/image-product-4.jpg" class="lightbox" data-index="4">
+            <img src="./images/image-product-4-thumbnail.jpg" alt="Image 3" class="thumb-4">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="product-description">
+      <h4 class="comapny-name">Sneaker Company</h4>
+      <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+      <p class="product-description1">These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="price">
+        <h2> $125.00</h2>
+        <h5>50%</h5>
+      </div>
+      <p class="strike">$250.00</p>
+      <div class="shop">
+        <div class="shopping-cart">
+          <div id="controls">
+            <button id="btnRemove" class="buttons"><span>-</span></button>
+            <div id="badge">0</div>
+            <button id="btnAdd" class="buttons"><span>+</span></button>
+          </div>
+        </div>
+
+        <button class="add-to-cart"><img src="./images/icon-cart.svg" alt="al" class="car"> Add to cart</button>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+  <!-- Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
