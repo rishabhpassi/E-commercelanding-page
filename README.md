@@ -3,6 +3,7 @@
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
+https://rishabhpassi.github.io/E-commercelanding-page/
 
 Thanks for checking out this front-end coding challenge.
 
